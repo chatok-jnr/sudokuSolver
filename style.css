@@ -8,7 +8,7 @@ body{
     flex-wrap: wrap;
     background:url(human.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    
     background-size: cover;
 }
 .div1{

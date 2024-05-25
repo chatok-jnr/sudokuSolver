@@ -1,15 +1,14 @@
-
-
 body{
-    /* font-family: IBM+PLEX+MONO; */
     font-family: "IBM Plex Mono", monospace;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background:url(human.jpg);
     background-position: center;
-    
+    background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    height: 100%;
 }
 .div1{
     width: 100%;
@@ -87,4 +86,50 @@ body{
     color: rgb(0, 255, 170);
     width: 160px;
     height: 80px;
+}
+
+footer{
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+.right{
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+.fa-brands{
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 428px) {
+    body{
+        background: url(width428.jpg);
+        background-size: contain;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .sudoku{
+        width: 360px;
+        height: 360px;
+    }
+    .div2{
+        height: 350px;
+    }
+    .fa-brands{
+        font-size: 20px;
+    }
 }

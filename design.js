@@ -35,11 +35,23 @@ function boxCreator() {
 
 
             if (window.innerWidth <= 428) {
-                div.style.width = "35px";
-                div.style.height = "35px";
-                ins.style.width = "35px";
-                ins.style.height = "35px";
-                ins.style.fontSize = "35px";
+                let z=window.innerWidth/9;
+                z-=5;
+                let z1=String(z);
+                console.log(z1);
+                
+                let w1=window.innerWidth;
+                let w=String(w1)+"px";
+                console.log(w);
+                document.getElementById('sudoku').style.width="100%";
+                document.getElementById('sudoku').style.height=w;
+                document.getElementById("div2").style.height=w;
+
+                div.style.width = z1+"px";
+                div.style.height = z1+"px";
+                ins.style.width = z1+"px";
+                ins.style.height = z1+"px";
+                ins.style.fontSize = z1+"px";
             } else {
                 div.style.width = "65px";
                 div.style.height = "65px";
@@ -48,7 +60,7 @@ function boxCreator() {
                 ins.style.fontSize = "45px";
             }
 
-            
+
             div.style.border = "0.1px solid black";
             div.style.display = "flex";
             div.style.alignItems = "center";
@@ -120,4 +132,3 @@ function wrongColor(x) {
         }
     }, 20);
 }
-

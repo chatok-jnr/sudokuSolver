@@ -59,7 +59,12 @@ function main(){
 
 	for(let i=0;i<9;i++){
 		for(let j=0;j<9;j++){
-			if(sudoku[i][j]!=0){
+			if(sudoku[i][j]<0 || sudoku[i][j]>9){
+				wrongColor("erro1");
+				
+				return;
+			}
+			else if(sudoku[i][j]!=0){
 				let z=sudoku[i][j];
 				sudoku[i][j]=0;
 				if(!check(sudoku,i,j,z)){
